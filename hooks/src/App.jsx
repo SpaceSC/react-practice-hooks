@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./button.jsx";
 import Input from "./input.jsx";
+import Increase from "./Increase.jsx";
 import "./App.css";
 
 function Appllle() {
@@ -8,6 +9,8 @@ function Appllle() {
     <div className="App">
       <Input />
       <Button />
+      <h1>{counter}</h1>
+      <Increase clickProp={() => setCounter(counter + 1)} />
     </div>
   );
 }
